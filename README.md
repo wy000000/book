@@ -1,6 +1,6 @@
 # 《脏腑标本虚实寒热用药式》辅助记忆工具
 
-./界面.png
+![Image text](https://github.com/wy000000/book/blob/master/%E7%95%8C%E9%9D%A2.png)
 
 点击其中的任意一项，可以转到相关项。比如点击“甘草”，会显示所示使用甘草的项。
 

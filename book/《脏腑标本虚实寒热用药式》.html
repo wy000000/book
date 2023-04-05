@@ -12,6 +12,7 @@
 			line-height: 1.1; /* 行间距 */
 			text-align: left; /* 对齐方式 */
 			color: black; /* 颜色 */
+			overflow: auto;
 		}
 
 		a {
@@ -89,7 +90,7 @@
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			overflow: hidden;
+			/*	overflow: hidden;*/
 			position: fixed;
 			top: 0;
 			z-index: 999;
@@ -115,9 +116,9 @@
 			width: 100%;
 			height: calc (100vh - 70px);
 			display: flex;
-			flex-wrap: nowrap;
+			/*flex-wrap: nowrap;*/
 			align-items: stretch;
-			overflow: hidden;
+			/*	overflow: hidden;*/
 			margin-top: 60px;
 			word-break: break-word;
 			line-height: 1.4;
@@ -138,7 +139,7 @@
 		#left {
 			width: 15%;
 			background-color: white;
-			overflow: auto;
+			/*overflow: auto;*/
 			padding: 2px 10px;
 			min-width: 120px;
 		}
@@ -147,10 +148,8 @@
 			width: calc (85% - 3px);
 			background-color: white;
 			padding: 2px 10px;
-			overflow: auto;
-			/*	position: relative;
-*/
-		}
+			/*overflow:auto;*/
+		}		
 
 	</style>
 </head>

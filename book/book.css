@@ -1,0 +1,137 @@
+﻿body {
+	font-size: 16px; /* 字体大小 */
+	line-height: 1.1; /* 行间距 */
+	text-align: left; /* 对齐方式 */
+	color: black; /* 颜色 */
+}
+a {
+	TEXT-DECORATION: none
+}
+
+
+.navBar{
+	font-size: 18px; /* 字体大小 */
+	line-height: 1; /* 行间距 */
+	text-align: left; /* 对齐方式 */
+	color: black; /* 颜色 */
+}
+
+.count {
+	font-size: 9px; /* 字体大小 */
+	/*line-height: 1.1;*/ /* 行间距 */
+	text-align: left; /* 对齐方式 */
+	color:#464646; /* 颜色 */
+}
+.organ {
+	font-size: 19px; /* 字体大小 */
+	/*line-height: 1.1;*/ /* 行间距 */
+	text-align: left; /* 对齐方式 */
+	color: black; /* 颜色 */
+}
+.remedy {
+	font-size: 18px; /* 字体大小 */
+	/*line-height: 1.1;*/ /* 行间距 */
+	text-align: left; /* 对齐方式 */
+	color: black; /* 颜色 */
+}
+.subRemedy {
+	font-size: 17px; /* 字体大小 */
+	/*line-height: 1.1;*/ /* 行间距 */
+	text-align: left; /* 对齐方式 */
+	color: black; /* 颜色 */
+}
+.herb {
+	font-size: 16px; /* 字体大小 */
+	/*line-height: 1.1;*/ /* 行间距 */
+	text-align: left; /* 对齐方式 */
+	color: green; /* 颜色 */
+}
+
+.hh1 {
+	font-size: 30px; /* 字体大小 */
+	line-height: 1.5; /* 行间距 */
+	text-align: center; /* 对齐方式 */
+	color:black; /* 颜色 */
+}
+.hh2 {
+	font-size: 24px; /* 字体大小 */
+	line-height: 1; /* 行间距 */
+	text-align: center; /* 对齐方式 */
+	color: rgb(90,90,90); /* 颜色 */
+}
+
+
+.small {
+	font-size: 1px; /* 字体大小 */
+	line-height: 1; /* 行间距 */
+	text-align: left; /* 对齐方式 */
+	color: black; /* 颜色 */
+}
+
+#navbar {
+	width: 100%;
+	height: 50px;
+	background-color: whitesmoke;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+	#navbar li {
+		float: left;
+	}
+
+		#navbar li a {
+			display: block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+			#navbar li a:hover {
+				background-color: cornsilk;
+			}
+
+#container {
+	width: 100%;
+	height: calc (100vh - 70px);
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	overflow: hidden;
+	margin-top: 60px;
+	word-break: break-word;
+	line-height: 1.4;  行间距 
+}
+
+#resize {
+	width: 3px;
+	background-color: whitesmoke;
+	min-width: 3px;
+	cursor: ew-resize;
+}
+
+	#resize:hover {
+		background-color: blue;
+	}
+
+#left {
+	width: 15%;
+	background-color: white;
+	overflow: auto;
+	padding: 2px 10px;
+	min-width:120px;
+}
+
+#right {
+	width: calc (85% - 3px);
+	background-color: white;
+	padding: 2px 10px;
+	overflow:auto;
+/*	position: relative;
+*/}

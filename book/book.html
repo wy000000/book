@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>《脏腑标本虚实寒热用药式》辅助记忆</title>
+	<link href="book.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<ul id="navbar" class="navBar">
+		<li>
+			<a href="#top"
+			   onclick='book.itemClick(book.name)'>
+				《脏腑标本虚实寒热用药式》
+			</a>
+		</li>
+		<li>
+			<a href="#contents" id="contents" onclick='book.itemClick("contents")'>
+				目录
+			</a>
+		</li>
+		<li><a href="#" onclick=book.back()>后退</a></li>
+		<li><a href="#" onclick=book.forward()>前进</a></li>
+		<li><a href="#top">返回顶部</a></li>
+		<li><a href="#" onclick=languageChange(true)>简体</a></li>
+		<li><a href="#" onclick=languageChange(false)>繁體</a></li>
+		<li><a href="#" onclick='book.itemClick("about")'>关于</a></li>
+
+		<!--<li style="float:right"><a class="active" href="#about">关于</a></li>-->
+	</ul>
+	<div id="top" width="100%">
+		<p class="small"><br></p>
+	</div>
+	<div id="container">
+		<div id="left"><br>
+			<!--<input id="Text1" type="text" /><input id="Button1" type="button" value="查找" />-->
+			<p class="text"><input type="checkbox" id="checkbox_sort" onclick=book.showLeftList()>排序</p>
+			<!--<a href=# class=herb onclick=book.itemClick()>点击</a>-->
+			<div id="leftList"></div>
+		</div>
+		<div id="resize"></div>
+		<div id="right">
+			<div id="mainContent"></div>
+			<div id="about" class="text">
+				<!--<a href=# class=herb onclick=book.itemClick('甘草')>甘草<span class=count>(8)</span></a>-->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="start.js"></script>
+	<script>
+
+	</script>
+</body>
+</html>

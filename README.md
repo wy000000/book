@@ -4,7 +4,7 @@
 
 朝代：金
 
-GitHub：
+GitHub：https://github.com/wy000000/book/
 
 版本：0.1beta
 

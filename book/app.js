@@ -195,7 +195,7 @@ class book_class extends base_Class
             default:
                 let objArray = this.#getItem(objectName);
                 str = `<span class="hh2">&nbsp;&nbsp;&nbsp;&nbsp;${objArray[0].name}</span>
-                <span class=count>&nbsp;&nbsp;${objArray.length}</span><br>`;
+                <span class=count>&nbsp;&nbsp;${objArray.length}</span><br>`;//显示当前搜索标题
                 for (let obj of objArray)
                     str += obj.getShowString();
         }
@@ -314,7 +314,7 @@ class remedy_class extends base_Class
 
     getShowString()
     {
-        let showString = this.position.organ.linkStr + '<br>'
+        let showString = this.position.organ.linkStr + '<br>' + this.position.organ.description + '<br>'
             + '&nbsp;&nbsp;&nbsp;&nbsp;' + this.linkStr + '<br>';
         for (let subRemedy of this.subRemedArray)
         {
@@ -354,7 +354,7 @@ class subRemedy_class extends base_Class
             this.allStr += herb.linkStr + '&nbsp;';
         }
         this.allStr += '<br>';
-        this.pathStr = this.position.organ.linkStr + '<br>'
+        this.pathStr = this.position.organ.linkStr + '<br>' + this.position.organ.description + '<br>'
             + '&nbsp;&nbsp;&nbsp;&nbsp;' + this.position.remedy.linkStr + '<br>';
     }
 

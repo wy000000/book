@@ -29,28 +29,28 @@
 			font-size: 9px; /* 字体大小 */
 			/*line-height: 1.1;*/ /* 行间距 */
 			text-align: left; /* 对齐方式 */
-			color: #464646; /* 颜色 */
+			color: grey; /* 颜色 */
 		}
 
 		.organ {
 			font-size: 19px; /* 字体大小 */
 			/*line-height: 1.1;*/ /* 行间距 */
 			text-align: left; /* 对齐方式 */
-			color: black; /* 颜色 */
+			color: #ff0000; /* 颜色 */
 		}
 
 		.remedy {
 			font-size: 18px; /* 字体大小 */
 			/*line-height: 1.1;*/ /* 行间距 */
 			text-align: left; /* 对齐方式 */
-			color: black; /* 颜色 */
+			color: #CF6B00; /* 颜色 */
 		}
 
 		.subRemedy {
 			font-size: 17px; /* 字体大小 */
 			/*line-height: 1.1;*/ /* 行间距 */
 			text-align: left; /* 对齐方式 */
-			color: black; /* 颜色 */
+			color: #0000ff; /* 颜色 */
 		}
 
 		.herb {
@@ -71,7 +71,7 @@
 			font-size: 24px; /* 字体大小 */
 			line-height: 1; /* 行间距 */
 			text-align: center; /* 对齐方式 */
-			color: rgb(90,90,90); /* 颜色 */
+			color: #EB69FF; /* 颜色 */
 		}
 
 
@@ -394,7 +394,7 @@
 					default:
 						let objArray = this.#getItem(objectName);
 						str = `<span class="hh2">&nbsp;&nbsp;&nbsp;&nbsp;${objArray[0].name}</span>
-                <span class=count>&nbsp;&nbsp;${objArray.length}</span><br>`;
+                <span class=count>&nbsp;&nbsp;${objArray.length}</span><br>`;//显示当前搜索标题
 						for (let obj of objArray)
 							str += obj.getShowString();
 				}
@@ -513,7 +513,7 @@
 
 			getShowString()
 			{
-				let showString = this.position.organ.linkStr + '<br>'
+				let showString = this.position.organ.linkStr + '<br>' + this.position.organ.description + '<br>'
 					+ '&nbsp;&nbsp;&nbsp;&nbsp;' + this.linkStr + '<br>';
 				for (let subRemedy of this.subRemedArray)
 				{
@@ -553,7 +553,7 @@
 					this.allStr += herb.linkStr + '&nbsp;';
 				}
 				this.allStr += '<br>';
-				this.pathStr = this.position.organ.linkStr + '<br>'
+				this.pathStr = this.position.organ.linkStr + '<br>' + this.position.organ.description + '<br>'
 					+ '&nbsp;&nbsp;&nbsp;&nbsp;' + this.position.remedy.linkStr + '<br>';
 			}
 
@@ -1216,6 +1216,10 @@
 				book.itemClick(bookName);
 			}
 		}
+
+
+
+		///////////////////////////////////////////////////////////////////
 		book.showLeftList();
 		book.itemClick("《脏腑标本虚实寒热用药式》");
 
